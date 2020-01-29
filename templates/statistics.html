@@ -1,0 +1,10 @@
+{% extends 'layout.html' %}
+
+
+{% block content %}
+    <p>GET : {{ counter_dict['GET'] }}</p>
+    <p>POST: {{ counter_dict['POST'] }}</p>
+    <p>PUT: {{ counter_dict['PUT'] }}</p>
+    <p>DELETE: {{ counter_dict['DELETE'] }}</p>
+    {% include 'footer.html' %}
+{% endblock %}
