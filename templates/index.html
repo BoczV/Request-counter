@@ -1,0 +1,11 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+<form action="/" method="post">
+    <button type="submit">Post</button>
+</form>
+    <form action="/" method="get">
+    <button><a href="/request-counter">Get</a></button>
+    </form>
+    {% include 'footer.html' %}
+{% endblock %}
