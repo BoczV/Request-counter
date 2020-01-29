@@ -1,11 +1,9 @@
 {% extends 'layout.html' %}
 
 {% block content %}
-<form action="/" method="post">
+<form action="/request-counter" method="post">
     <button type="submit">Post</button>
 </form>
-    <form action="/" method="get">
-    <button><a href="/request-counter">Get</a></button>
-    </form>
+    <button><a href="{{ url_for('request_counter') }}">Get</a></button>
     {% include 'footer.html' %}
 {% endblock %}
