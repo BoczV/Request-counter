@@ -2,9 +2,8 @@
 
 
 {% block content %}
-    <p>GET : {{ counter_dict['GET'] }}</p>
-    <p>POST: {{ counter_dict['POST'] }}</p>
-    <p>PUT: {{ counter_dict['PUT'] }}</p>
-    <p>DELETE: {{ counter_dict['DELETE'] }}</p>
+    {% for item in all_data_from_http %}
+        <p>{{ item['request'] }}: {{ item['number'] }}</p>
+    {% endfor %}
     {% include 'footer.html' %}
 {% endblock %}
